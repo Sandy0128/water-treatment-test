@@ -10,7 +10,7 @@ discover = unittest.defaultTestLoader.discover(test_dir, pattern = "*_case.py")
 
 if __name__ == "__main__":
 
-	"""
+	
 	now = time.strftime("%Y-%m-%d-%H_%M_%S")
 	filename = "./report/" + now + "_result.html"
 	fp = open(filename, "wb")
@@ -19,7 +19,9 @@ if __name__ == "__main__":
 	discover = unittest.defaultTestLoader.discover(test_dir, pattern = "*_case.py")
 	runner.run(discover)
 	fp.close()
+
 	"""
 	runner = unittest.TextTestRunner()
 	runner.run(discover)
+	"""
 	
